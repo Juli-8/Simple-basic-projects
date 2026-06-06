@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="js-Submit"
+  onclick="
+  Submit();
+  "
+  title="cross-check the fillin before clicking the submit button"
+  >Submit</button>
+  <button class="js-Subscribe"
+  onclick="
+  Subscribe();
+  "
+  title="Subscribe to get the latest Updates"
+  >Subscribe</button>
+  <button class="js-Send"
+  onclick="
+  Send();
+  "
+  title="Click to Recieve"
+  >Send</button>
+
+  <button class="buy-button"
+  onclick="
+  alert('Buy 3 get 1 free');
+  "
+  onclick="
+  Buy=But+1;
+  "
+  >Buy</button>
+  <button class="Buy2"
+  
+  onclick="
+  Buy2=Buy+2;
+  "
+  onclick="
+  alert('Buy 3 get 1 Free');
+  "
+  >Buy+2</button>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function Submit(){
+  const buttonElement=document.querySelector('.js-Submit');
+  if(buttonElement.innerHTML==='Submit'){
+    buttonElement.innerHTML='Submitted';
+
+  }
+  else{
+    buttonElement.innerHTML='Submit';
+  }
+  }
+
+  function Subscribe(){
+    const buttonElement=document.querySelector('.js-Subscribe');
+    if(buttonElement.innerHTML==='Subscribe'){
+      buttonElement.innerHTML='Subscribed';
+    }
+    else{
+      buttonElement.innerHTML='Subscribe';
+    }
+  }
+
+
+document.title='Dom & If';   
+
+
+
+const Products={
+  oliveCream:30000,
+  babySoap:6000,
+  skinCare:30000,
+  handCream:2000,
+  Provisions:{
+    Milo:9800,
+    Milk:15000,
+    Biscuits:2000,
+    Sugar:3700,
+    Detergents:{
+      liquidSoap:2500,
+      washingSoap:4900,
+      soKiln:4000
+    }
+
+  }
+};
+console.log(Products.Provisions. Detergents);
+
+console.log(JSON.stringify(Products));
+
+function Send(){
+  const buttonElement=document.querySelector('.js-Send');
+  if(buttonElement.innerHTML==='Send'){
+    buttonElement.innerHTML='Recieved';
+  }
+  else{
+    buttonElement.innerHTML='Send';
+  }
+
+}
+let Buy=1;
+console.log(`Buy:${Buy}`);
+document.querySelector('.buy-button');
+
+
+let Buy2=2;
+console.log(`Buy2:${Buy2}`);
+document.querySelector('.Buy2');
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

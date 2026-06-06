@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB3</title>
+</head>
+<body>
+  <nav>
+  <header>
+    <h1>Web3 By & Sell App</h1>
+  </header>
+  <div class="contact">
+    <h3>  Welcome to Juli's Web3  Buy and sell </h3>
+    <section>
+    <p>We buy & Sell all kinds of crypto, cards and vouchers all in <span>Good price$</span></p>
+    <h4><span class="con">For Equiries & Deals..</span> <br>
+       <span> 
+      Email:       julietuzoechi1@gmail.com <br>
+      Phone No:    +234 8147145253 <br>
+      Whatsapp:    +234 7034438474 <br>
+      Office Hours: 8am-5:30pm <br>
+      Days:         Mon-Sun
+      </h4></span>
+    </nav>
+    </div>
+    <div class="form-group1">
+      <div class="form-set1">
+        <label for="crypto">CRYPTO SELECTION <span class="cry"></span></label>
+        <select name="crpto" id="coins">
+          <option value="cypto">Choose</option>
+          <option value="cypto">Bitcoin</option>
+          <option value="cypto">Ethereum</option>
+          <option value="cypto">Solana</option>
+          <option value="cypto">USDT</option>
+          <option value="cypto">USDT Teh</option>
+          <option value="cypto">BST</option>
+          <option value="cypto">Poly</option>
+        </select>
+        <form action="https://www.github.com" method="post">
+        <label for="crypto">Others</label>
+        <input type="text" name="crypto" id="crpto" placeholder="Write the name of the cryto">
+        <label for="crypto">SELL</label>
+        <input type="number" name="cryto" id="sell" placeholder="$ Amount to Sell">
+        <label for="crypto">BUY</label>
+        <input type="number" name="crypto" id="Buy" placeholder="$ Amount to Buy"><br><br>
+        <button class="buy"               type="submit" tittle="Buy @ good rate"
+        onclick="
+        button();
+        alert('Thanks for patronage');
+        "
+        
+        >BUY</button>
+        <button type="submit" class="sell"  title="We buy @ good rate" 
+        onclick="
+       button3();
+       alert('Thanks for Trusting Us');
+        "         >SELL</button>
+        </form>
+      </div>
+      <h3>For Pending Transaction</h3>
+      <p>Please Fill the form only if there is a pending transaction over 24hrs <br>Add the correct date and time of the  Pending Transaction</p>
+      <form action="https://www.github.com" method="post">
+        <div class="form-set2">
+         <label for="wallet">Wallet ID</label>
+      <input type="number" name="wallet" id="wallet" used in transaction         required>
+        <label for="name">FullName</label>
+      <input type="text" name="name" id="name" placeholder="Name as its in wallet" required>
+      <label for="Email">Email</label>
+      <input type="email" name="email" id="email" required>
+      <label for="number">Phone No</label>
+      <input type="tel" name="number" id="number" placeholder="phoneNo used in  the transaction"required>
+      <label for="date">Date</label>
+      <input type="datetime-local" name="date" id="date"required> <br><br>
+      <button  class="petra"   
+            type="submit" title="Check transactions are been processed before closing the App"
+            onclick="
+            button2();
+            alert('processed');
+
+            "
+            
+            
+            >PENDING</button>
+      <p>We follow every pending transaction actively once you fill the form correctly..</p>
+      <h5>Warning: We don't take fradulently and scamming lightly, to avoid facing the long length of the Law!!</h5>
+      </div>
+      </form>
+        <footer>
+          
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+  </section>
+
+<style>
+.form-group1{
+display:flex;
+flex-direction: column;
+width:100%;
+ border-top: 4px rgb(248, 168, 244) solid;
+  background-color: rgb(42, 60, 82);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: block;
+}
+.form-set1{
+  gap:40px;
+}
+.form-set2{
+  gap:40px;
+}
+button{
+  background-color: rgb(99, 99, 99);
+  color:azure;
+  font-size: 18px;
+  font-display: block;
+  border-radius: 50%;
+  border: solid rgb(243, 70, 70) 2px;
+  padding:10px;
+}
+button:hover{
+  background-color: rgb(93, 93, 236);
+  color:beige;
+  transition: 1s;
+  box-shadow: inset rgb(185, 221, 132);
+
+}
+h1{
+  background-color: rgb(45, 102, 84);
+ 
+  justify-content: center;
+  display: flex;
+  border-top: solid 4px rgb(230, 169, 169);
+
+}
+
+.contact{
+  background-color: rgb(16, 31, 26);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: block;
+  border-top: solid 4px rgb(248, 187, 187);
+}
+span{
+  color:brown;
+  font-weight: bold;
+  font-display: block;
+  border-top: rgb(240, 133, 95);
+}
+h3{
+  color:white;
+  font-display: block;
+  font-weight: bold;
+}
+p{
+   background-color: rgb(184, 247, 226);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-display: block;
+}
+h5{
+  color:rgb(236, 46, 46);
+  font-display: fallback;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  stroke:white 1px;
+}
+</style>
+
+
+
+
+
+
+<script>
+  /*
+const mySelf={
+  Activities:'Weekly',
+  Monday: 'learning',
+  Tuesday: 'Practing',
+  Wenesday:'Teaching',
+  Thursday:'Studing',
+  Friday:'Summary',
+  Monthly:{
+    Earning:1000000,
+    Savings:600000,
+    Expenditure:400000,
+    Miscellanous:100000,
+  }
+}
+console.log(`Showing ${mySelf.Activities} from Monday :${mySelf.Monday} ,tuesday :${mySelf.Tuesday},wenesday: ${mySelf.Wenesday},Thursday:${mySelf.Thursday} and friday:${mySelf.Friday} Then my monthly Earning of ${mySelf.Monthly.Earning},Savings i made that month : ${mySelf.Monthly.Savings}, till the total Expenses of :${mySelf.Monthly.Expenditure} and unexpected miscellanous spending of :${mySelf.Monthly.Miscellanous} All I can say is that  the month of April was good, I give God all the Praise.`);
+
+*/
+/*
+let Fruits=['Orange','Apple','StrawBerry','avocadoPear'];
+console.log(Fruits);
+
+Fruits.push('Mango');
+Fruits.unshift('africanApple');
+Fruits.shift();
+Fruits.pop();
+
+Fruits=['Sweet','Diet','Biscuits'];
+console.log(Fruits);
+*/
+/*
+let fishSeller={
+Titus:5000,
+Sardine:3000,
+Geisha:5700,
+stockFish:9100,
+dryFish:6000,
+Chicken:{
+  Turkey:11000,
+  guineaFowl:12000,
+  localFowl:5000,
+  whiteMeat: function(){
+   console.log('Everything listed above is important for human nutrients and fiber');
+  }
+}
+}
+console.log(fishSeller.Chicken);
+console.log(JSON.stringify(fishSeller));
+fishSeller={
+  Groundnut:200,
+  Biscuits:500,
+  eggRoll:1000
+}
+
+console.log(fishSeller);
+
+let car={
+  firstName:'Juliet',
+  lastName:'Uzooechi',
+  Occupation:'Tutor',
+  displayMessage:function(){
+    console.log(`${this.firstName}${this.lastName} works as a ${this.Occupation}, that teaches digital Skills and Empowerment to youths and Youngsters.`);
+  }
+}
+
+console.log(car.displayMessage());
+
+
+function Person(name,age,occupation){
+this.name=name;
+this.age=age;
+this.occupation=occupation;
+}
+
+const somePerson=new Person('Nick', 30, 'Engineer');
+const anotherPerson=new Person('Emma', 29, 'Architect');
+if(somePerson==='Person'){
+  console.log('Eligible to vote and be voted for')}
+  else{
+    console.log('Not Eligible to vote nand be voted for')
+  }
+
+
+let list=['Rice','Garri', 'Yam', 'Spaghetti','cocoYam','africaBreadFruit'];
+console.log(list [3]);
+
+console.log(list[4]);
+list[4]='indomie';
+console.log(list);
+console.log(list[7]);
+list.push('dodo');
+list.unshift('lodo');
+console.log(list);
+*/
+function button(){
+const buttonElement=document.querySelector('.buy');
+if(buttonElement.innerHTML==='BUY'){
+  buttonElement.innerHTML='SUCCESSFUL';
+}
+else{
+  buttonElement.innerHTML='BUY';
+}
+}
+function button2(){
+  const buttonElement=document.querySelector('.petra');
+  if(buttonElement.innerHTML==='PENDING'){
+    buttonElement.innerHTML='SUBMITTED';
+  }
+  else{
+    buttonElement.innerHTML='PENDING';
+  }
+}
+
+function button3(){
+  const buttonElement=document.querySelector('.sell');
+  if (buttonElement.innerHTML==='SELL'){
+    buttonElement.innerHTML='SOLD';
+  }
+else{
+  buttonElement.innerHTML='SELL';
+}
+
+}
+
+let Appliances={
+  Television:'Plasma12inchs',
+  Radio:'frequencySychronization',
+  Lighting:['20watts','40watts','60watts','80watts', '100watts'],
+  Offestries:{
+    Cushion:'5Sets',
+    Chairs:'6Sets',
+    Table:2,
+    Manufacturers: function(){
+    console.log(`'We ordered' ${Appliances.Television} ${Appliances.Radio} ${Appliances.Lighting}${Appliances.Offestries} 'from Joe Interiors co.limited on 24th August 2025, We are yet to get the Items.'`)
+    }
+  }
+}
+console.log(Appliances.Offestries.Manufacturers());
+console.log(Appliances.Lighting);
+console.log(JSON.stringify(Appliances));
+
+for(let key in Appliances){
+  console.log(key);
+}
+const you={A:1,B:2};
+const Me={R:5, L:7};
+const Obj=Object.assign(you, Me);
+console.log(Obj);
+
+const She={Joy:'pureLove'};
+
+const Human=Object.assign({},She);
+console.log(Human);
+
+const New={
+  fisherMan:'20Fishes',
+  pepperSoup:'rabbitMeat',
+  jellofRice:{
+    tomato:'Fresh',
+    spices:'ginoSpice',
+    Soup:function(){
+      (`I crave for fisherMan Soup, Goat Meat peppersoup, Jellofrice and Oha soup for this week.`);
+    }
+  }
+}
+const Year=Object.assign({},New);
+console.log(Year);
+Year.fisherMan='80Fishes';
+Year.New={
+  Indomie:'1Cartoon',
+  Egg:'1 Crate',
+  Vegetable:2000,
+  Cabbage:600
+}
+
+const Month={January:1, Febuary:2};
+const leapYear={Days:366};
+const Contract=Object.assign(Month, leapYear);
+console.log(Contract);
+
+const Room={
+  Funitures:'2seats',
+  Television:1,
+  cotton:6,
+}
+
+const Hostle={
+  Lounge:60,
+  gateHouse:1,
+  readingRoom:10
+}
+const Institute=Object.assign(Room,Hostle);
+console.log(Institute);
+
+Institute.Room=function(){
+  console.log(`Every Little Things are Going to be Alright`);
+}
+Object.seal(Institute);
+console.log(Institute);
+Institute.Hostle='freeTime';
+console.log(Institute.Hostle);
+const{Lounge, gateHouse}=Hostle;
+console.log(Lounge, gateHouse)
+const{Television,cotton, Stairs='20steps'}=Room;
+console.log(Television, cotton, Stairs);
+</script>
+
+</body>
+</html>

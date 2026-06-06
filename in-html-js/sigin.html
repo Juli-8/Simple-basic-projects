@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signin</title>
+</head>
+<body>
+  <header>
+    <h2>SIGN-IN</h2>
+  </header>
+  <section>
+    <h3>Sign-in to acess your account and fill the form....</h3>
+    <p>If you don't have an account with Us, Click the  register button to Register frst <br>To get a code send to your mail. <br><span>Note: The rgistration email will be the only acceptable one , No changing of email</span>  </p>
+
+    <form action="Website.html" target="_blank" method="post"></form>
+    <div>
+    <label for="Email ">Email Address <span>*</span></label><br>
+    <input type="email" name="Email" id="Emal-address" required><br><br>
+    </div>
+    <div>
+    <label for="Password">Input Password <span>*</span></label><br>
+    <input type="password" name="Password" id="Password" required><br><br>
+    </div>
+    <div>
+    <label for="confirm password">Confirm Password <span>*</span></label><br>
+    <input type="password" name="Password" id="Password" required><br><br>
+    </div>
+     </section>
+
+    <footer>
+      <div>
+     <a href="http://www.Ai secured.com" target="_blank"  re  >Face verification</a> <br>
+    <label for="security"> <small>Click to Verify it's You....</small>  </label><br><br>
+    </div>
+
+    <button type="submit" class="Sign"
+    onclick="
+    Sign();
+    
+    "
+    title="
+    Sign in to get Started
+    "
+    >SIGN-IN</button> <button type="Send"
+    onclick="
+    Register();
+    " 
+    title="
+    Register Now!
+    "
+    class="Register"
+    ><a href="Register form.html" target="_self">REGISTER</a>      </button><br><br>
+    
+     <button type="submit"><a href="Rock.html">FORGOT PASSWORD</a> </button>
+     </footer>
+
+<script>
+function Sign(){
+  const buttonSign=document.querySelector('.Sign');
+  if (buttonSign.innerHTML==='SIGN-IN'){
+    buttonSign.innerHTML='SIGNED';
+  }
+  else{
+    buttonSign.innerHTML='SIGN-IN';
+  }
+}
+
+document.title='practice';
+const Products={
+  Rice:5000,
+  Beans:4000,
+  Spaghetti:27000,
+  Onions:1000,
+  Tomato:2500,
+  Pepper:1200,
+  Salt:500,
+  pamlOil:800,
+
+  Gadgets:{
+    Television: 'Sets',
+    Radio:'fmFrequency',
+    goTv:'Subscription'
+  }
+
+
+};
+console.log(Products.Rice);
+console.log(JSON.stringify(Products));
+
+function Register(){
+  const Register=document.querySelector('.Register');
+if(Register.innerHTML==='REGISTER'){
+Register.innerHTML='REGISTERED';
+}
+else{
+ Register.innerHTML='REGISTER' ;
+}
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+</body>
+</html>

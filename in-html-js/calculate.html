@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Calculator</title>
+</head>
+<body>
+<h3>Youtube Subscribe Button</h3> 
+<button class="button1"
+onclick="
+Sub();
+alert('Subscribe to get info on new educating videos');
+
+
+"
+
+>Subscribe</button>
+<a href="http://google.com">Click Me..</a>
+
+<p>Amazon Shipping Calculator..</p>
+<p>Orders Under $40= +10 Shipping</p>
+<p>Orders Over $40 =Free Shipping</p>
+
+<input type="number" placeholder="Cost of Order" class="cost-js" onkeydown="event">
+<button    class="cal"          onclick="
+ 
+Calculate();
+costKey(event);
+press();
+"
+
+
+>Calculate</button>
+<p class="display"
+
+></p>
+<style>
+button{
+  background-color: rgb(38, 38, 240);
+  color:black;
+  stroke:1px grey ;
+  border:dotted, dotted, rgb(172, 250, 94);
+  border-radius: 50px;
+  padding:10px;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+}
+
+button:hover{
+  background-color: rgb(247, 81, 81);
+  color:white;
+  transition-duration: 1ms;
+  opacity: 90%;
+
+}
+.cost-js{
+  background-color: rgb(236, 222, 250);
+  border:solid, 0.5px, rgb(218, 93, 93);
+  stroke:grey, 1px;
+  border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<script>
+  function costKey(event){
+    if(event.key==='Enter'){
+      Calculate();
+    }
+  }
+
+function Calculate(){
+  const inputElement=document.querySelector('.cost-js');
+  let cost =Number(inputElement.value);
+  if(cost < 40){
+    cost= cost +10;
+  }
+  document.querySelector('.display').innerHTML=`$${cost}`;
+}
+
+
+function press(){
+  const buttonElement= document.querySelector('.cal');
+  if(buttonElement.innerHTML==='Calculate'){
+    buttonElement.innerHTML='Calculated';
+  }
+  else{
+    buttonElement.innerHTML='Calculated';
+  }
+}
+function Sub(){
+  const buttonElement=document.querySelector('.button1');
+  if(buttonElement.innerHTML==='Subscribe'){
+    buttonElement.innerHTML='Subscribed';
+  }
+  else{
+    buttonElement.innerHTML='Subscribe';
+  }
+}
+
+
+
+
+
+
+  
+
+
+
+
+</script>
+</body>
+</html>
