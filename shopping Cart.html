@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work-Load..</title>
+</head>
+<body>
+
+  <section>
+  <p>Shopping Cart <br> Pick and it will Be <br>Added in the cart</p>
+  <button class="bu1"
+  onclick="
+  button1();
+  alert('1 item added to cart');
+  "
+   
+  >Add</button> 
+  <button class="bu2"
+    onclick="
+    button2();
+    alert('2 items added to cart');
+    
+    "
+  
+  >+2</button> 
+  <button class="bu3"
+  onclick="
+  button3();
+   alert('3 items added to cart');
+  ">+3</button>  
+  <button class="bu-re"
+  
+  onclick="
+   buttonReset();
+    alert('No item in cart');
+  "
+ 
+  >Reset</button>
+  <div class="cart-container">
+    
+<img src="cart.png" width="100px">
+<span id="cart-count">0</span>
+
+  </div>
+  </section>
+
+<style>
+button{
+  background-color:hsl(165, 88%, 30%);
+  color:rgb(230, 223, 223);
+  border-radius: 20px;
+  border:0.1px dotted rgb(152, 221, 240);
+  padding:10px;
+  border-spacing: 2px;
+  box-shadow: rgb(226, 211, 211);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 16px;
+  font-weight: bold;
+  font-display: fallback;
+  margin:7px;
+  cursor: pointer;
+}
+button:active{
+  opacity:50%;
+  color:black;
+  background-color:hsl(165, 88%, 93%);
+  transition: 1ms;
+}
+button:hover{
+  background-color:hsl(165, 88%, 73%);
+   color:black;
+}
+.cart-container{
+  position: relative;
+  width:fit-content;
+  margin-right: 1990px auto;
+}
+#cart-count{
+  position: absolute;
+  top:0;
+  right:0;
+  background: red;
+  color: whitesmoke;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p{
+  margin-left:10px;
+  font-size: 24px;
+  font-weight: bold;
+  border:none;
+  width:180px;
+  padding:30px;
+  color:rgb(157, 59, 243);
+  stroke:1px rgb(240, 149, 149);
+
+  
+}
+
+</style>
+
+<script>
+let cart=0;
+function updateCart(){
+  document.getElementById('cart-count').textContent=cart;
+}
+function button1(){
+  const buttonElement= document.querySelector('.bu1');
+ if(buttonElement.innerHTML==='Add'){
+  buttonElement.innerHTML ='Added';
+ }
+ else{
+  buttonElement.innerHTML='Add';
+ }
+  cart +=1;
+ updateCart();
+ 
+}
+function button2(){
+  cart +=2;
+  updateCart();
+}
+ 
+function button3(){
+  cart +=3;
+  updateCart();
+}
+
+function buttonReset(){
+  cart =0;
+  updateCart();
+}
+function Add(){
+
+ }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
