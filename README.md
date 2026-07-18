@@ -11,7 +11,7 @@ A portfolio of UI/UX design and frontend development projects by Juliet Uzoechi.
 - [Sports Design](https://www.figma.com/proto/tRjtgQiAC23shQruyDzQsS)
 
 ## 💻 Frontend Development Projects
-
+-Todo-list
 - Calculator 2
 - Scientific Calculator
 - Shopping Cart
